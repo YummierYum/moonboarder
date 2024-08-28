@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.moonboard {
+    z-index: -1;
+    position: absolute;
+    top: -40px;
+    left: 355px;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +44,40 @@
     transform: rotate(360deg);
   }
 }
+
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.hold {
+    width: 35px;
+    min-width: 20px;
+    height: 35px;
+    min-height: 20px;
+    background-color: aquamarine;
+    margin: 0px;
+    opacity: 0.5;
+}
+
+.hold.start {
+    background-color: green;
+}
+
+.hold.intermediate {
+    background-color: blue;
+}
+
+.hold.end {
+    background-color: red;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
